@@ -16,6 +16,6 @@ export class CourseCardComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    console.log('CourseCardComponent>>>>', this.coursesService);
+    console.log('CourseCardComponent>>>>', this.coursesService.getData());
   }
 }

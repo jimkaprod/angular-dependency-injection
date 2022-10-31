@@ -8,4 +8,8 @@ export class CoursesService {
   constructor(http: HttpClient) {
     this.http = http;
   }
+
+  getData(): string[] {
+    return ['un', 'deux'];
+  }
 }
