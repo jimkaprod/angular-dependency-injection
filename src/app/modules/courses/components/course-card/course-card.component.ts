@@ -8,9 +8,6 @@ import { CoursesService } from '../../services/courses.service';
   styleUrls: ['./course-card.component.css'],
 })
 export class CourseCardComponent implements OnInit {
-  // constructor(
-  //   @Inject(COURSES_SERVICE_TOKEN) private coursesService: CoursesService
-  // ) {}
   constructor(
     @Inject(COURSES_SERVICE_TOKEN) private coursesService: CoursesService
   ) {}
