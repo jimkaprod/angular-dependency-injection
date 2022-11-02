@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { COURSES_USE_CLASS_SERVICE_TOKEN } from 'src/app/modules/courses-useClass/providers/courses-use-class.provider';
-import { CoursesUseClassService } from 'src/app/modules/courses-useClass/services/courses-use-class.service';
+import { COURSES_USE_CLASS_SERVICE_TOKEN } from '../../providers/courses-use-class.provider';
+import { CoursesUseClassService } from '../../services/courses-use-class.service';
 
 @Component({
   selector: 'app-course-card-use-class',
@@ -15,7 +15,7 @@ export class CourseCardUseClassComponent implements OnInit {
 
   ngOnInit() {
     console.log(
-      'CourseCardComponent>>>>',
+      'CourseUseClassCardComponent>>>>',
       this.coursesUseClassService.getData()
     );
   }
